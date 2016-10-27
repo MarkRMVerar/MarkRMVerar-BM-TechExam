@@ -1,0 +1,157 @@
+
+@import url("stylesheets.css");
+
+/*++++ Media Queries  ++++*/
+@media screen and (max-width: 1198px) {
+  
+  /*Search by State*/
+  .gridbox_vert {
+    float: left;
+    height: 240px;
+    margin-left: 20px;
+    width: 449px;
+}
+  /*END Search by State*/
+  
+
+}
+/*Menu fix*/
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	
+	.navbar {position:relative;margin-top:-23px;float: inherit;display:block}
+	
+	/*Banner Search*/
+	.search_list-wrap {width: 144px;}
+	.search_list {width: 157px;background-position:124px center}
+	.search_itext {width:326px}
+	input.search_btn {width:144px}
+	.search_checkbox {margin-left:20px}
+	/*END Banner Search*/
+	
+	/*Search by State*/
+	.gridbox_vert {width:288px;height: 130px;margin-right:20px;margin-left:0}
+	.gridbox_horz {height: 130px;width: 288px;}
+	.gridposition_righttop, .gridposition_rightbottom {position:relative;right:inherit;display:table}
+	.gridbox1 {margin-right:20px}
+	/*END Search by State*/
+	
+	/*Farm Loan Calc*/
+	.farmcalc_wrap {width:448px;height:198px;background: transparent url("/images/bg_farmcalc_tablet.png") no-repeat scroll left top;}
+	.farmcalc_wrap dl {padding: 23px 0 0;width: 405px;background-position: left 22px;}
+	.farmcalc_wrap dl dt {font-size:22px;padding-top:22px}
+	a.farmcalc_btn {margin-top:17px}
+	.img-fromtablet {width:96%}
+	/*END Farm Loan Calc*/
+	
+	/*Sub Footer*/
+	.subfooter_wrap ul {display:block;width:100%;text-align: center;}
+	.subfooter_wrap ul li {border-right:0;float:none;display:block;padding: 0 0 28px;}
+	.subfooter_wrap figure {float:none;display:block;margin:0 auto;text-align: center;}
+	/*END Sub Footer*/
+	
+}
+/*END  Menu Fix*/
+/*tablet*/
+@media screen and (max-width: 768px) {
+    /*.banner_search-wrap {background:red}*/ /*Delete*/
+	/*banner ad*/
+	.banner_search-wrap {min-height: 364px;background-position:left top}
+	.searchbox {margin-top:92px}
+	.hide_fromtablet {display:none}
+	.search_list-wrap {width: 144px;}
+	.search_list {width: 157px;background-position:124px center}
+	.search_itext {width:45%}/*326px*/
+	input.search_btn {width:144px}
+	.search_checkbox {margin-left:20px}
+	.hide_desktop {display:block}
+	.logo_lg {background: transparent url("/images/logo_sprite.png") no-repeat scroll -380px top;height: 32px;margin: 13px auto 0;width: 131px;}
+	.navbar {position:relative;margin-top:-53px}
+	.img_advert_searchbystate {width:100%}
+	/*END banner ad*/
+}
+@media screen and (max-width: 655px) {
+	/*Banner Ad*/
+	.search_itext {width: 30%;}
+	.search_checkbox {margin-left: 45px}
+	/*END Banner Ad*/
+}
+/*END Tablet*/
+@media (max-width: 532px) {
+  /*Header nav*/
+  .navbar {position:relative;margin-top:-53px}
+  .buysell-wrap {display:none}
+  .logo_lg {margin-left:0;margin-right:0;}
+  /*END Header Nav*/
+  
+  /*Search banner*/
+  .search_list-wrap, .search_itext, input.search_btn {display:none}
+  
+  .col_buysell_mob {width:50%;display:inline-block;float:left;height:46px}
+
+  
+  .searchbox_mobile_wrap {display:block}
+  .searchbox_mobile_wrap input[type="text"] {display:inline-block;width:77%;height:40px;vertical-align:top;border-bottom-right-radius: 0;border-top-right-radius: 0;padding: 0 0 0 10px;}
+  /*END Search banner*/
+  
+  /*Banner Ad*/
+  
+  /*END Banner Ad*/
+  
+  /*Search by State*/
+  .gridbox_wrap {width:100%}
+  .gridbox1 {margin-right: 0;}
+  .gridbox_vert {margin-left:auto;margin-right:auto;float:none;display:table}
+  .gridbox1 {display: block;float: none;width: 100%;}
+  .gridbox_horz {margin-left: auto;margin-right: auto;margin-top: 0;}
+  
+  .showon_mobileonly_buysell {display:block}
+  .showon_mobileonly_buysell a {display:block;text-align:center;font-size:16px;color:#b6b6b6;border-bottom:4px #c5c5c5 solid;background:#f1f1f1;text-decoration:none;height:46px;padding-top:10px}
+  .showon_mobileonly_buysell a:hover {color:#94c11f; border-bottom-color:#94c11f}
+  
+  .searchbox {background:none}
+  .farmcalc_wrap {background: transparent url("/images/bg_farmcalc_mobile.png") no-repeat scroll left top;height: 198px;width: 278px;top:80px}
+  .farmcalc_wrap dl {width: 248px;}
+  .farmcalc_wrap dd span {display:block;height:40px;overflow:hidden}
+  a.farmcalc_btn {width:100%}
+  /*END Search by State*/
+  
+}
+
+
+
+
+/*++++ END Media Queries  ++++*/

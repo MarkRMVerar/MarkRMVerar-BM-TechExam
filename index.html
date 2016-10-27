@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bauer Media - FE Test | MarkRMVerar</title>
+
+    <!-- Bootstrap -->
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Slider -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <!-- END Slider -->
+    <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <link href="css/mediaquries.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container-fluid header_wrap">
+    	<div class="container">
+        	<div class="buysell-wrap">
+        		<a href="javascript:void(0)">Buy</a><a href="javascript:void(0)">Sell</a>
+        	</div>
+            <!-- Tablet/Mobile Logo -->
+            <figure class="logo_lg hide_desktop"></figure>
+            <!-- END Tablet/Mobile Logo -->
+            <!-- Nav -->
+            <nav class="navbar navbar-default logonav">
+              
+                <div class="navbar-header">
+                  <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-right" id="navbar">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:void(0)">Agent Locator</a></li>
+                    
+                    <li><a href="javascript:void(0)">My Farmbuy</a></li>
+                    
+                    <li><a href="javascript:void(0)">About Us</a></li>
+                    <li><a href="javascript:void(0)">Farm Machinery for sale</a></li>
+                    
+                  </ul>
+                  
+                	<div class="signreg-wrap">
+                    	<a href="javascript:void(0)">Sign</a> or <a href="javascript:void(0)">Register</a>
+                    </div>
+                  
+                </div><!--/.nav-collapse -->
+              
+            </nav>
+            <!-- END Nav -->
+        </div>
+    
+    </div>
+    <!-- END Header -->
+    
+    <!-- banner search -->
+    <div class="container-fluid banner_search-wrap">
+        <div class="row showon_mobileonly_buysell">
+            <div class="col_buysell_mob">
+                <a href="javascript:void(0)"><span>Buy</span></a>
+            </div>
+            <div class="col_buysell_mob">
+                <a href="javascript:void(0)"><span>Sell</span></a>
+            </div>
+        </div>
+    	<div class="container">
+        	<figure class="logo_lg hide_fromtablet"></figure>
+            <div class="searchbox">
+            	<form action="#" method="post" name="search" id="search">
+                	<!-- Mobile -->
+                    <div class="searchbox_mobile_wrap">
+                    	<input type="text" name="searchby" class="search_itext" placeholder="Search location"><input name="search" type="image" src="images/btn_search_icon.png">
+                    </div>
+                    <!-- End Mobile -->
+                    <div class="search_list-wrap">
+                    	<select name="select_state" class="search_list">
+                            <option>Select State</option>
+                            <option>All</option>
+                            <option>VIC</option>
+                            <option>NSW</option>
+                            <option>NT</option>
+                            <option>QLD</option>
+                            <option>WA</option>
+                            <option>SA</option>
+                            <option>TAS</option>
+                        </select>
+                    </div>
+                    <input type="text" name="searchby" class="search_itext" placeholder="Search by region, suburb, postcode or address">
+                    <input type="button" name="Search" class="search_btn" value="Search">
+                    <div class="search_checkbox">
+                    	<!-- <input name="suburbs" type="checkbox" value=""><p>Surrounding suburbs</p> -->
+                        <div class="squaredTwo">
+                          <input type="checkbox" value="None" id="squaredTwo" name="check" checked />
+                          <label for="squaredTwo"></label>
+                        </div>
+                        <p>Surrounding suburbs</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END banner search -->
+    
+    <!-- Featured Properties -->
+    <div class="container-fluid">
+    	<div class="container featuredproperties_wrap">
+        	<h1 class="h1_title h1_titleblack">Featured Properties<span></span></h1>
+        </div>
+    </div>
+    <div class="container-fluid featprop_carousel_wrap">
+    	<!-- Carousel -->
+        <section class="featprop_carousel_box">
+            <!-- -->
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                      
+              <div class="item carousel_item">
+              	<!-- -->
+                
+                    <div class="carousel_box">
+                        <figure>
+                            <img src="images/img_carousel_item.jpg" title="" alt="">
+                            <figcaption>$633,000</figcaption>
+                        </figure>
+                        <dl class="carousel_info">
+                            <dt>Lifestyle</dt>
+                            <dd>
+                                2053 Nowendoc Road, Mount Geoge 2424 NSW
+                            </dd>
+                        </dl>
+                        <ul class="carousel_deg">
+                            <li>13 H</li>
+                            <li>31 AC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="carousel_map_api_wrap">
+                        <div class="carousel_map_api_box">
+                            <img src="images/img_map_api.jpg" title="" alt="">
+                        </div>
+                    </div>
+                    
+                <!-- -->
+              </div>
+              <div class="item carousel_item">
+              	<!-- -->
+                
+                    <div class="carousel_box">
+                        <figure>
+                            <img src="images/img_carousel_item.jpg" title="" alt="">
+                            <figcaption>$633,000</figcaption>
+                        </figure>
+                        <dl class="carousel_info">
+                            <dt>Lifestyle</dt>
+                            <dd>
+                                2053 Nowendoc Road, Mount Geoge 2424 NSW
+                            </dd>
+                        </dl>
+                        <ul class="carousel_deg">
+                            <li>13 H</li>
+                            <li>31 AC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="carousel_map_api_wrap">
+                        <div class="carousel_map_api_box">
+                            <img src="images/img_map_api.jpg" title="" alt="">
+                        </div>
+                    </div>
+                    
+                <!-- -->
+              </div>
+              <div class="item carousel_item">
+              	<!-- -->
+                
+                    <div class="carousel_box">
+                        <figure>
+                            <img src="images/img_carousel_item.jpg" title="" alt="">
+                            <figcaption>$633,000</figcaption>
+                        </figure>
+                        <dl class="carousel_info">
+                            <dt>Lifestyle</dt>
+                            <dd>
+                                2053 Nowendoc Road, Mount Geoge 2424 NSW
+                            </dd>
+                        </dl>
+                        <ul class="carousel_deg">
+                            <li>13 H</li>
+                            <li>31 AC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="carousel_map_api_wrap">
+                        <div class="carousel_map_api_box">
+                            <img src="images/img_map_api.jpg" title="" alt="">
+                        </div>
+                    </div>
+                    
+                <!-- -->
+              </div>
+              <div class="item carousel_item">
+              	<!-- -->
+                
+                    <div class="carousel_box">
+                        <figure>
+                            <img src="images/img_carousel_item.jpg" title="" alt="">
+                            <figcaption>$633,000</figcaption>
+                        </figure>
+                        <dl class="carousel_info">
+                            <dt>Lifestyle</dt>
+                            <dd>
+                                2053 Nowendoc Road, Mount Geoge 2424 NSW
+                            </dd>
+                        </dl>
+                        <ul class="carousel_deg">
+                            <li>13 H</li>
+                            <li>31 AC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="carousel_map_api_wrap">
+                        <div class="carousel_map_api_box">
+                            <img src="images/img_map_api.jpg" title="" alt="">
+                        </div>
+                    </div>
+                    
+                <!-- -->
+              </div>
+              <div class="item carousel_item">
+              	<!-- -->
+                
+                    <div class="carousel_box">
+                        <figure>
+                            <img src="images/img_carousel_item.jpg" title="" alt="">
+                            <figcaption>$633,000</figcaption>
+                        </figure>
+                        <dl class="carousel_info">
+                            <dt>Lifestyle</dt>
+                            <dd>
+                                2053 Nowendoc Road, Mount Geoge 2424 NSW
+                            </dd>
+                        </dl>
+                        <ul class="carousel_deg">
+                            <li>13 H</li>
+                            <li>31 AC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="carousel_map_api_wrap">
+                        <div class="carousel_map_api_box">
+                            <img src="images/img_map_api.jpg" title="" alt="">
+                        </div>
+                    </div>
+                    
+                <!-- -->
+              </div>
+              <div class="item"><h1>6</h1></div>
+              <div class="item"><h1>7</h1></div>
+              <div class="item"><h1>8</h1></div>
+              <div class="item"><h1>9</h1></div>
+              <div class="item"><h1>10</h1></div>
+              <div class="item"><h1>11</h1></div>
+              <div class="item"><h1>12</h1></div>
+             
+            </div>
+            <!-- -->
+        </section>
+        <!-- END Carousel -->
+        
+        
+        
+    </div>
+    <!-- END Featured Properties -->
+    
+    <!-- Search by State -->
+    <div class="container-fluid bg_searchbystate">
+    	<div class="container searchbystate">
+        	<h1 class="h1_title">Search by State<span></span></h1>
+            <!-- Grid box -->
+            <section class="gridbox_wrap">
+            	<div class="gridbox1">
+                    <figure class="gridbox_horz westernaustralia">
+                        <figcaption>Western Australia <span>563 Farms for sale</span></figcaption>
+                    </figure>
+                    <figure class="gridbox_horz southaustralia">
+                        <figcaption>South Australia <span>679 Farms for sale</span></figcaption>
+                    </figure>
+                </div>
+                <!-- col2 -->
+                <figure class="gridbox_vert queensland">
+                    <figcaption>Queensland <span>852 Farms for sale</span></figcaption>
+                </figure>
+                <figure class="gridbox_vert newsouthwales">
+                    <figcaption>New South Wales <span>2699 Farms for sale</span></figcaption>
+                </figure>
+                <figure class="gridbox_vert victoria">
+                    <figcaption>Victoria <span>3156 Farms for sale</span></figcaption>
+                </figure>
+                <!-- END col2 -->
+                <!-- col3 -->
+                <figure class="gridbox_horz northernterritory gridposition_righttop">
+                        <figcaption>Northern Territory <span>920 Farms for sale</span></figcaption>
+                </figure>
+                <figure class="gridbox_horz tasmania gridposition_rightbottom">
+                    <figcaption>Tasmania <span>251 Farms for sale</span></figcaption>
+                </figure>
+                <!-- END col3 -->
+            </section>
+            <!-- END Grid Box -->
+            <section class="advert">
+            	<img src="images/img_leaderboard_ad.jpg" title="" alt="" class="img_advert_searchbystate">
+            </section>
+            <section class="rabobnk_farmcalc">
+            	<figure>
+                	<img src="images/img_rabobank.png" title="" alt="" class="img-fromtablet">
+                	<figcaption><span></span>Supported by Rabobank</figcaption>
+                </figure>
+                <div class="farmcalc_wrap">
+                	<dl>
+                    	<dt>Farm Loan Calculator</dt>
+                        <dd>
+                        	<span>Lorem ipsum dolor sit fees, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                            <a class="farmcalc_btn" href="javascript:void(0)">Get Started</a>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- END Search by State -->
+    
+    <!-- Footer Submenu social -->
+    <div class="container-fluid">
+    	<div class="container subfooter_wrap">
+        	<ul>
+            	<li><a href="javascript:void(0)">Buy</a></li>
+                <li><a href="javascript:void(0)">Sell</a></li>
+                <li><a href="javascript:void(0)">Agent Locator</a></li>
+                <li><a href="javascript:void(0)">My farmbuy</a></li>
+                <li><a href="javascript:void(0)">About Us</a></li>
+                <li><a href="javascript:void(0)">Farm Machinery for Sale</a></li>
+                <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+            </ul>
+            <figure>
+                <div class="social_icon_wrap"><a href="javascript:void(0)"><i class="font-icon icon-facebook">&#xe801;</i></a></div>
+                <div class="social_icon_wrap"><a href="javascript:void(0)"><i class="font-icon icon-twitter">&#xe802;</i></a></div>
+                <div class="social_icon_wrap"><a href="javascript:void(0)"><i class="font-icon icon-gplus">&#xe800;</i></a></div>
+            </figure>
+        </div>
+    </div>
+    <!-- END Footer Submenu social -->
+    
+    <!-- Footer -->
+    <footer class="container-fluid footer_wrap">
+    	<div class="container">
+        	<h6>&copy; farmbuy.com 2016. All rights reserved.</h6>
+        </div>
+    </footer>
+    <!-- END Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Slider -->
+	<script src="js/owl.carousel.js"></script>
+    <!-- End Slider -->
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        navigation : true
+      });
+    });
+  	</script>
+    
+  </body>
+</html>

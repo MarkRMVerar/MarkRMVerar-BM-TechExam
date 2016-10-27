@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/*! Main Styles */
+
+/*++ Custom Fonts ++*/
+@font-face {
+	font-family: 'Conv_LibreCaslonText-Regular';
+	src: url('../fonts/librecaslontext/LibreCaslonText-Regular.eot');
+	src: local('☺'), url('../fonts/librecaslontext/LibreCaslonText-Regular.woff') format('woff'), url('../fonts/librecaslontext/LibreCaslonText-Regular.ttf') format('truetype'), url('../fonts/librecaslontext/LibreCaslonText-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/opensans/OpenSansRegular.eot');
+    src: url('../fonts/opensans/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/opensans/OpenSansRegular.woff') format('woff'),
+         url('../fonts/opensans/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/opensans/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/opensans/OpenSansSemibold.eot');
+    src: url('../fonts/opensans/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansSemibold.woff2') format('woff2'),
+         url('../fonts/opensans/OpenSansSemibold.woff') format('woff'),
+         url('../fonts/opensans/OpenSansSemibold.ttf') format('truetype'),
+         url('../fonts/opensans/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/opensans/OpenSansBold.eot');
+    src: url('../fonts/opensans/OpenSansBold.eot') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansBold.woff2') format('woff2'),
+         url('../fonts/opensans/OpenSansBold.woff') format('woff'),
+         url('../fonts/opensans/OpenSansBold.ttf') format('truetype'),
+         url('../fonts/opensans/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/opensans/OpenSansItalic.eot');
+    src: url('../fonts/opensans/OpenSansItalic.eot') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansItalic.woff2') format('woff2'),
+         url('../fonts/opensans/OpenSansItalic.woff') format('woff'),
+         url('../fonts/opensans/OpenSansItalic.ttf') format('truetype'),
+         url('../fonts/opensans/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}
+
+/*++ END Custom Fonts ++*/
+
+body {font-family:'OpenSansRegular';}
+
+
+/*++ Header ++*/
+.header_wrap {background:#183444;color:#fff;padding:14px 0}
+.buysell-wrap {display:inline-block;float:left}
+.buysell-wrap a {display:inline-block;padding:12px 26px 8px;color:#fff;font-size:16px;font-family:'OpenSansRegular';background:#83b819;border-radius:5px;margin-left:1px}
+.buysell-wrap a:nth-child(2) {background:transparent}
+.buysell-wrap a:hover {text-decoration:none;background:#72a50d;color:#d6d809;font-family: 'OpenSansSemibold'}
+
+.navbar-nav > li { border-right:1px solid #42535a}
+
+.signreg-wrap {display:inline-block;color:#d9d9d9}
+.signreg-wrap a {color:#83b819}
+.signreg-wrap a:hover {color:#d6d809;text-decoration:none}
+/*++ END Header ++*/
+
+/*++ Banner Ad ++*/
+.banner_search-wrap {background:transparent url(/images/bg_banner.jpg) no-repeat left -65px;min-height:711px;max-weight:711px;background-size:cover}
+.logo_lg {background:transparent url(/images/logo_sprite.png) no-repeat left top;height:90px;width:368px;margin:135px auto 0}
+.hide_desktop {display:none}
+.searchbox {margin:127px 0 0;height:auto;width:100%;background:transparent url(/images/bg_search.png) no-repeat left top;padding:40px 0 35px;height:178px} /*border:1px #ccc solid;border-radius:5px;background:rgba(0, 0, 0, .4)*/
+#search {text-align:center}
+.search_list-wrap {width:194px;overflow:hidden;display:inline-block;vertical-align:top; border-right:1px #fff solid; border-radius:5px}
+.search_list {width:207px;height:64px;background:#fff url(/images/img_select_arrow.jpg) no-repeat 170px center;border-radius:5px;border:0px #fff solid;font-size:16px;color:#999;padding:0 0 0 22px}
+.search_itext {width:475px;height:auto;padding:19px 21px;border-radius:5px;border:1px #fff solid;font-size:16px;color:#9a9a9a;margin-left:19px}
+input.search_btn {width:194px;height:64px;background:#239619;color:#fff;font-size:18px;text-align:center;border:1px #239619 solid;border-radius:5px;margin-left:19px;font-family: 'OpenSansBold'}
+input:hover.search_btn {background:rgba(35, 150, 25, .9)} /*The Hover colour was the same as the active colour base on the .doc and .psd so I decided to insert some opacity just to show the hover state*/
+.search_checkbox {display:inline-block;font-size:14px;color:#dfdfdf;margin:23px 0 0 44px;float:left}
+.search_checkbox input[type="checkbox"] {border:1px #000 solid;}
+.search_checkbox p {display:inline-block;margin: 0;vertical-align: top;}
+
+.searchbox_mobile_wrap, showon_mobileonly_buysell {display:none}
+
+.squaredTwo {
+    margin: 5px auto 0;
+    position: relative;
+	display:inline-block;
+}
+.squaredTwo label {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fff 0%, #fff 100%) repeat scroll 0 0;
+    cursor: pointer;
+    height: 13px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 13px;
+	border:1px #000 solid;
+	margin-bottom:0
+}
+.squaredTwo label::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: transparent none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #239619 #239619;
+    border-image: none;
+    border-style: none none solid solid;
+    border-width: medium medium 3px 3px;
+    content: "";
+    height: 5px;
+    left: 2px;
+    opacity: 0;
+    position: absolute;
+    top: 2px;
+    transform: rotate(-45deg);
+    width: 9px;
+}
+.squaredTwo label:hover::after {
+    opacity: 0.3;
+}
+.squaredTwo input[type="checkbox"] {
+    visibility: hidden;
+	margin:0;
+	vertical-align:top
+}
+.squaredTwo input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
+
+
+/*++ END Banner Ad ++*/
+
+/*++ Featured Properties ++*/
+.featuredproperties_wrap {display:block;padding:75px 0 57px}
+.featprop_carousel_wrap {display:block;width:100%;padding:0 0 98px}
+.carousel_item {border:1px #d4d4d4 solid;border-radius:5px;position:relative;padding:0 0 20px;height:339px;margin:0}
+.carousel_box {position:relative}
+.carousel_item figure {height:220px;overflow:hidden;position:relative}
+.carousel_item figure figcaption {color:#fffefe;font-family: 'OpenSansBold';font-size:34px;position:absolute;bottom:19px;left:21px}
+dl.carousel_info {width:195px;display:inline-block;padding:0 0 0 18px;margin:0}
+.carousel_info dt {padding:26px 0 16px;font-size:14px;color:#319e28;font-family: 'OpenSansItalic';}
+.carousel_info dd {font-family: 'OpenSansSemibold';color:#29363b;font-size:14px}
+ul.carousel_deg {padding:80px 15px 0 0;display:inline-block;font-family: 'OpenSansSemibold';color:#557b83;font-size:14px;list-style:none;margin:0;float:right}
+.carousel_deg li {padding:1px 6px 3px;float:left}
+.carousel_deg li:first-child {border-right:1px #dedede solid}
+div.carousel_map_api_wrap {position:absolute;border:1px #dedede solid;border-radius:40px;width:82px;height:82px;overflow:hidden;top:173px;right:20px}
+div.carousel_map_api_box {position:relative}
+.carousel_map_api_box img {position:absolute;top:-107px;right:-84px}
+
+/*TEST*/
+    #owl-demo .item{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+	  width:328px
+    }
+	.owl-carousel .owl-item {width:328px;margin:0 0 0 20px}
+/*END TEST*/
+
+/*++ END Featured Properties ++*/
+
+/*++ Search by State ++*/
+.bg_searchbystate {background:#131b20 url(/images/bg_searchbystate.jpg) no-repeat left top;background-size:cover;height:auto;padding-bottom:106px}
+.searchbystate {padding:77px 0 0}
+.h1_title {color:#fff;font-size:34px;margin:0;text-align:center;font-family: 'Conv_LibreCaslonText-Regular';}
+.h1_title span, .h1_titleblack span {margin:30px auto 0;display:block;width:59px;height:1px;background:#fff}
+.h1_titleblack {color:#183444}
+.h1_titleblack span {background:#183444}
+
+/*Grid Box*/
+.gridbox_wrap {margin:64px 0 0;display:table;position:relative}
+.gridbox1 {display:inline-block;float:left}
+
+.gridbox_horz {height:370px;width:240px}
+.gridbox_vert {width:502px;height:240px;margin-left:20px;margin-right:20px;float:left}
+.gridbox_horz, .gridbox_vert {border-radius:5px;border:1px solid;background-size:cover;background-repeat:no-repeat; background-position:left top; background-color:transparent;position:relative;margin-bottom:20px}
+
+.gridbox_horz figcaption, .gridbox_vert figcaption {font-family: 'Conv_LibreCaslonText-Regular';font-size:22px;color:#fff;position:absolute;bottom:18px;left:17px}
+.gridbox_horz figcaption span, .gridbox_vert figcaption span {display:block;font-size:14px;color:#83b819;font-family:'OpenSansItalic'}
+
+.gridposition_righttop, .gridposition_rightbottom {position:absolute;right:0}
+.gridposition_rightbottom {bottom:0}
+
+.westernaustralia {background-image:url(/images/img_western_australia.jpg)}
+.southaustralia {background-image:url(/images/img_south_australia.jpg)}
+.queensland {background-image:url(/images/img_queensland.jpg)}
+.newsouthwales {background-image:url(/images/img_new_south_wales.jpg)}
+.victoria {background-image:url(/images/img_victoria.jpg)}
+.northernterritory {background-image:url(/images/img_northern_territory.jpg)}
+.tasmania {background-image:url(/images/img_tasmania.jpg)}
+/*END Grid Box*/
+.advert {padding:93px 0 91px;display:block;width:100%;text-align:center}
+.rabobnk_farmcalc {display:block;position:relative;width:100%}
+.rabobnk_farmcalc figure {display:block;width:100%}
+.rabobnk_farmcalc figure figcaption span {display:block;height:2px;width:100%;background:transparent url(/images/img_supported_line.jpg) no-repeat left top;margin:0 0 17px}
+.rabobnk_farmcalc figure figcaption {padding:20px 0 0;font-family: 'OpenSansItalic';font-size:16px;color:#fff}
+.farmcalc_wrap {position:absolute;right:0;bottom:0;width:541px;height:268px;background:transparent url(/images/img_farmcalc.png) no-repeat left top;}
+.farmcalc_wrap dl {background:transparent url(/images/line_farmcalc.jpg) no-repeat left 38px;color:#fff;padding:38px 0 0;width:426px;margin:0 auto}
+.farmcalc_wrap dl dt {padding:32px 0 10px;font-family: 'Conv_LibreCaslonText-Regular';font-size:34px}
+.farmcalc_wrap dl dt dd {font-family: 'OpenSansRegular';font-size:16px;}
+a.farmcalc_btn {display:block;width:164px;height:36px;font-family: 'OpenSansSemibold';font-size:16px;color:#fff;background:#83b819 none;border-radius:5px;border:1px #183444 solid;text-align:center;margin:30px 0 0;vertical-align:middle;padding:6px 0 0 }
+a:hover.farmcalc_btn {background:#72a50d;text-decoration:none}
+/*++ END Search by State ++*/
+
+
+/*++ Footer submenu social ++*/
+.subfooter_wrap {padding:77px 0 74px}
+.subfooter_wrap ul {display:inline-block;padding:14px 0 0;margin:0;font-size:14px;color:#29363b}
+.subfooter_wrap ul li {list-style:none;float:left;border-right:1px #cbcbcb solid;padding:0 16px 3px}
+.subfooter_wrap ul li:last-child {border:0}
+.subfooter_wrap ul li a {color:#29363b;display:block}
+.subfooter_wrap ul li a:hover {text-decoration:none;color:#d6d809}
+
+
+/*Font Icon*/
+@font-face {
+      font-family: 'fontello';
+      src: url('../fonts/fontello.eot?71567269');
+      src: url('../fonts/fontello.eot?71567269#iefix') format('embedded-opentype'),
+           url('../fonts/fontello.woff?71567269') format('woff'),
+           url('../fonts/fontello.ttf?71567269') format('truetype'),
+           url('../fonts/fontello.svg?71567269#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .font-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+	  color:#557b83
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+/*END Font Icon*/
+
+.subfooter_wrap figure {display:inline-block;float:right;}
+.social_icon_wrap {display:inline-block;border:1px #dadada solid;border-radius:10px;padding:4px;margin-left:13px}
+.social_icon_wrap:first-child {margin-left:0}
+.social_icon_wrap a:hover {text-decoration:none}
+
+/*++ END Footer submenu social ++*/
+
+/*++ Footer ++*/
+.footer_wrap {background:#5b5151;padding:28px 0 23px}
+.footer_wrap h6 {font-size:14px;color:#9c9595;margin:0;text-align:center}
+/*++ END Footer ++*/
+
+
+
+
+
+
+
